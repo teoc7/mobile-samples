@@ -30,6 +30,6 @@ steps:
     
 - task: PublishBuildArtifacts@1
   inputs:
-        PathtoPublish: 'WalkingGameMG/Android/WalkingGame.Droid.apk'
+        PathtoPublish: '$(outputDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
